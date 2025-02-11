@@ -1,0 +1,37 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {}
+  },
+  {
+    "bindings": {
+      "“": "pane::GoBack", // option+[
+      "option-]": "pane::GoForward",
+      "cmd-s": "workspace::SaveWithoutFormat",
+      "cmd-option-l": "editor::Format",
+      "option-t": "terminal_panel::ToggleFocus",
+      "cmd-shift-t": "workspace::NewTerminal",
+      "option-right": "pane::ActivateNextItem",
+      "option-left": "pane::ActivatePrevItem",
+      "cmd-w": "pane::CloseActiveItem",
+      "cmd-shift-w": "pane::CloseInactiveItems",
+      "option-s": "outline_panel::ToggleFocus",
+      "option-a": "project_panel::ToggleFocus",
+      "option-p": "diagnostics::Deploy",
+      "shift shift": "command_palette::Toggle"
+    }
+  }
+]
